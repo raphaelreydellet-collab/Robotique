@@ -1,0 +1,54 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
+WorldInfo {
+  coordinateSystem "EUN"
+}
+Viewpoint {
+  orientation -0.7092065431442391 0.7038779289075108 0.03977361384475502 2.951288285799208
+  position 0.05317779481759302 2.1888128949276338 0.40878196060280925
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  rotation 1 0 0 -1.5707953071795862
+  floorTileSize 0.25 0.25
+  wallHeight 0.05
+}
+WoodenBox {
+  translation 0.44 0.05 0.42
+  name "wooden box_01"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.44 0.05 -0.43
+  name "wooden box_02"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.44 0.05 0.44
+  name "wooden box_03"
+  size 0.1 0.1 0.1
+}
+E-puck {
+  hidden position_0_0 75.62046413143068
+  hidden position_0_1 75.62046413611358
+  hidden linearVelocity_0 -0.01113740071001728 3.05672850703335e-08 -0.016490562910432608
+  hidden angularVelocity_0 0.005565796652665094 9.549270372165759e-10 -0.0037590284852568323
+  hidden rotation_1 0 1 0 0.22224044527564119
+  hidden linearVelocity_1 -0.011118605869203864 1.6764316645729213e-08 -0.016462734372986194
+  hidden angularVelocity_1 -0.8231367230513029 -5.384443033422535e-07 0.5559302905413659
+  hidden rotation_2 0 1 0 0.2222404499585446
+  hidden linearVelocity_2 -0.011118605783422877 1.67945104488858e-08 -0.01646273424751296
+  hidden angularVelocity_2 -0.8231367177309746 -5.978419776722947e-07 0.5559302984079988
+  translation 0.2689797821043929 -6.389311274951001e-05 -0.06524047263308419
+  rotation -0.35154596398525173 0.661878371385522 0.662066806823699 2.464860244130687
+  controller "Mesure_distance"
+}

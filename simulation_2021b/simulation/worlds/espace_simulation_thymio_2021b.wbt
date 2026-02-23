@@ -1,0 +1,70 @@
+#VRML_SIM R2021b utf8
+WorldInfo {
+  basicTimeStep 10
+  contactProperties [
+    ContactProperties {
+      material2 "thymio body"
+      coulombFriction [
+        0.7
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation 0.1889064865708194 0.4669852150329223 0.8638513461656029 2.4285947384620914
+  position 1.3378039553449648 1.0726770137256372 1.2996574263473466
+  follow "thymio2"
+}
+DirectionalLight {
+  ambientIntensity 1
+  color 1 1 0.8999999999999999
+  intensity 2
+  castShadows TRUE
+  castLensFlares TRUE
+}
+RectangleArena {
+  rotation 1 0 0 1.5708
+  floorTileSize 1 1
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "textures/paper.jpg"
+      ]
+    }
+    roughness 1
+    metalness 0
+  }
+}
+Thymio2 {
+  hidden position_0_0 3.8312692474350546e-11
+  hidden position_0_1 3.831150771364227e-11
+  hidden linearVelocity_0 2.0532878938303e-16 -1.7884168407168182e-11 -2.984411700138868e-16
+  hidden angularVelocity_0 -1.0362137485353076e-14 -7.316000332026215e-16 8.986318303355469e-15
+  hidden linearVelocity_1 -1.853548376233866e-16 -1.7886830350710777e-11 -1.9766278522160906e-16
+  hidden angularVelocity_1 7.40275799249178e-13 -3.268514243101128e-15 8.975701854270133e-15
+  hidden linearVelocity_2 -2.454508654582471e-16 -1.788435234975886e-11 -2.0255042731993555e-16
+  hidden angularVelocity_2 7.402221835473101e-13 -3.772668685685953e-15 8.978103866477812e-15
+  translation 4.90951673832511e-05 -0.12842506685338959 -2.0539496973032145e-05
+  rotation 0.9999999536163547 -0.0002143009456802873 -0.0002164310351615896 1.5612948491344036
+  controller "thymio_exemple"
+  bodySlot [
+    Thymio2Pen {
+    }
+  ]
+}
+Thymio2 {
+  hidden position_0_0 0.09530000645961928
+  hidden position_0_1 0.09530000652980083
+  hidden linearVelocity_0 2.5825969501169233e-18 -1.7883378752005966e-11 -2.1543200304949035e-16
+  hidden angularVelocity_0 9.39209946426964e-15 1.5155551255039859e-15 2.1359689151771605e-17
+  hidden rotation_1 1 0 0 0.09530000645961903
+  hidden linearVelocity_1 -7.24333002167064e-17 -1.788719809650832e-11 -1.0408935609261178e-16
+  hidden angularVelocity_1 7.608950383887058e-13 1.3065414972739879e-15 2.3260885169835188e-17
+  hidden rotation_2 1 0 0 0.0953000065298005
+  hidden linearVelocity_2 1.3649686772426189e-16 -1.788556146080216e-11 -6.937813117896752e-17
+  hidden angularVelocity_2 7.609025365727266e-13 -2.0743880206071666e-15 8.049968437538354e-18
+  translation 0.00011585852262655014 0.28303977913707984 -1.9028102198774544e-05
+  rotation 0.9999999855776179 -0.00011947974636272076 -0.00012070357942723856 1.5612948171668999
+  name "Thymio II - pilotable"
+  controller "thymio_manual_control"
+}
