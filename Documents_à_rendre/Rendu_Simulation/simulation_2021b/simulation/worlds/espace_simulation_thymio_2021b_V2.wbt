@@ -1,0 +1,90 @@
+#VRML_SIM R2021b utf8
+WorldInfo {
+  basicTimeStep 10
+  contactProperties [
+    ContactProperties {
+      material2 "thymio body"
+      coulombFriction [
+        0.7
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation 0.5762471681379483 -0.10746607932774399 -0.8101791425400422 0.4524927253836851
+  position 0.2937485368376263 -0.6782096719629187 2.8323253483342166
+  follow "thymio2"
+}
+DirectionalLight {
+  ambientIntensity 1
+  color 1 1 0.8999999999999999
+  intensity 2
+  castShadows TRUE
+  castLensFlares TRUE
+}
+RectangleArena {
+  rotation 1 0 0 1.5708
+  floorTileSize 1 1
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "textures/paper.jpg"
+      ]
+    }
+    roughness 1
+    metalness 0
+  }
+  wallAppearance PBRAppearance {
+    baseColor 0 0 0
+  }
+}
+Thymio2 {
+  hidden position_0_0 130.97827137032104
+  hidden position_0_1 134.2658211399025
+  hidden rotation_1 0.9999999999999999 0 0 3.4491627817877113
+  hidden rotation_2 1 0 0 0.532350403801658
+  translation -0.13088016622506812 -0.06656156896858441 -2.0312314013802568e-05
+  rotation 0.5741583417383168 0.5761805668568986 0.5816856135308568 2.0909642063055554
+  name "Thymio II_ParanoB"
+  controller "ParanoB"
+  bodySlot [
+    Thymio2Pen {
+    }
+  ]
+}
+Thymio2 {
+  hidden position_0_0 145.53095845635048
+  hidden position_0_1 148.81850595535093
+  hidden rotation_1 1 0 0 5.4354792534579754
+  hidden rotation_2 1 0 0 2.5186646048909322
+  translation -0.24760346043905812 -0.054641282354504425 -2.026206368992145e-05
+  rotation 0.5728478491137666 0.5768263567684329 0.5823372698900422 2.092946371222
+  name "Thymio II_ParanoB(1)"
+  controller "ParanoB"
+  bodySlot [
+    Thymio2Pen {
+    }
+  ]
+}
+Thymio2 {
+  hidden position_0_0 54.62996645646859
+  hidden position_0_1 54.62996716852031
+  hidden rotation_1 1 0 0 0.8669157766933183
+  hidden rotation_2 0.9999999999999999 0 0 0.8669212919881554
+  translation 0.0137522 -0.0487789 -0.00372721
+  rotation 0.5437185405448861 0.5906236179914336 0.5962666270540788 2.137581583603524
+  name "Thymio II_Timide"
+  controller "Timide"
+  bodySlot [
+    Thymio2Pen {
+    }
+  ]
+}
+Thymio2 {
+  hidden rotation_1 -1 0 0 3.8265848497215207
+  hidden rotation_2 1 0 0 5.709715973637218
+  translation -0.469548926625764 0.21481335028449297 -1.9278766003723302e-05
+  rotation 0.5756080033936765 0.5754638008648231 0.5809619955929618 2.0887746923822617
+  name "Thymio II - pilotable_Timide"
+  controller "thymio_manual_control"
+}
